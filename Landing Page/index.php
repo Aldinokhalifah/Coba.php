@@ -8,8 +8,6 @@
     <link rel="stylesheet"
     href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-   
-
 </head>
 
 <?php
@@ -20,7 +18,7 @@ if(isset($_POST["send"])) {
     $_email = $_POST['email'];
     $_message = $_POST['pesan'];
     $data = [$_nama,$_email,$_message];
-    $sql = "INSERT INTO kontak (nama,email,pesan) VALUES (?,?,?)";
+    $sql = "INSERT INTO form_kontak (nama,email,pesan) VALUES (?,?,?)";
     $stmt = $dbh->prepare($sql);
     $stmt->execute($data);
 }

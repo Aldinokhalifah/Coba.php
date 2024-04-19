@@ -1,7 +1,7 @@
 <?php
 // Konfigurasi database
 $host = 'localhost'; // Ganti sesuai dengan host Anda
-$dbname = 'contact_us'; // Ganti dengan nama database Anda
+$dbname = 'project_pw1'; // Ganti dengan nama database Anda
 $user = 'root'; // Ganti dengan nama pengguna database Anda
 $pass = ''; // Ganti dengan kata sandi database Anda
 
