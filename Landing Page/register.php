@@ -13,7 +13,7 @@ $stmt->bindParam(':email', $email);
 $stmt->execute();
 
 if($stmt->rowCount() > 0) {
-    header("Location: login1.html");
+    header("Location: index.html");
     exit;
 } else {
     echo "<h1>Masukkan Nama, Email dan Password dengan benar</h1>";

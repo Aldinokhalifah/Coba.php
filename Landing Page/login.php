@@ -12,7 +12,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
     $result = $stmt->fetch();
 
     if($result) {
-        header("Location: index.php");
+        header("Location: home.php");
     exit;
     } else {
         echo "<h1>Email atau Password anda salah</h1>";
