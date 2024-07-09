@@ -13,7 +13,7 @@ class PembinaController extends Controller
     public function index()
     {
         $pembina = pembina::get();
-        return view('pembina.index',  compact('pembina'));
+        return view('admin.pembina.index',  compact('pembina'));
     }
 
     /**
@@ -21,7 +21,7 @@ class PembinaController extends Controller
      */
     public function create()
     {
-        return view('pembina.create');
+        return view('admin.pembina.create');
 
     }
 
@@ -55,7 +55,7 @@ class PembinaController extends Controller
      */
     public function show(pembina $pembina)
     {
-        return view('pembina.show', compact('pembina'));
+        return view('admin.pembina.show', compact('pembina'));
     }
 
     /**
@@ -63,7 +63,7 @@ class PembinaController extends Controller
      */
     public function edit(pembina $pembina)
     {
-        return view('pembina.edit', compact('pembina'));
+        return view('admin.pembina.edit', compact('pembina'));
     }
 
     /**

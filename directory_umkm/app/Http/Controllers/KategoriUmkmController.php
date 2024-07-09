@@ -13,7 +13,7 @@ class KategoriUmkmController extends Controller
     public function index()
     {
         $kategori_umkm =kategori_umkm::get();
-        return view('kategori_umkm.index', compact('kategori_umkm'));
+        return view('admin.kategori_umkm.index', compact('kategori_umkm'));
     }
 
     /**
@@ -21,7 +21,7 @@ class KategoriUmkmController extends Controller
      */
     public function create()
     {
-        return view('kategori_umkm.create');
+        return view('admin.kategori_umkm.create');
     }
 
     /**
@@ -48,7 +48,7 @@ class KategoriUmkmController extends Controller
      */
     public function show(kategori_umkm $kategori_umkm)
     {
-        return view('kategori_umkm.show' , compact('kategori_umkm'));
+        return view('admin.kategori_umkm.show' , compact('kategori_umkm'));
     }
 
     /**
@@ -56,7 +56,7 @@ class KategoriUmkmController extends Controller
      */
     public function edit(kategori_umkm $kategori_umkm)
     {
-        return view('kategori_umkm.edit' , compact('kategori_umkm'));
+        return view('admin.kategori_umkm.edit' , compact('kategori_umkm'));
     }
 
     /**

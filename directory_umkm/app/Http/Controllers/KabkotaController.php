@@ -13,7 +13,7 @@ class KabkotaController extends Controller
     public function index()
     {
         $kabkota = kabkota::get();
-        return view('kabkota.index',  compact('kabkota'));
+        return view('admin.kabkota.index',  compact('kabkota'));
     }
 
     /**
@@ -22,7 +22,7 @@ class KabkotaController extends Controller
     public function create()
     {
         
-        return view('kabkota.create');
+        return view('admin.kabkota.create');
     }
 
     /**
@@ -48,7 +48,7 @@ class KabkotaController extends Controller
      */
     public function show(kabkota $kabkota)
     {
-        return view('kabkota.show', compact('kabkota'));
+        return view('admin.kabkota.show', compact('kabkota'));
     }
 
     /**
@@ -56,7 +56,7 @@ class KabkotaController extends Controller
      */
     public function edit(kabkota $kabkota)
     {
-        return view('kabkota.edit', compact('kabkota'));
+        return view('admin.kabkota.edit', compact('kabkota'));
 
     }
 

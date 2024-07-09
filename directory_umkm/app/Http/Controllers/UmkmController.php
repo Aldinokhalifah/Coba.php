@@ -13,7 +13,7 @@ class UmkmController extends Controller
     public function index()
     {
         $umkm = umkm:: get();
-        return view('umkm.index', compact('umkm'));
+        return view('admin.umkm.index', compact('umkm'));
     }
 
     /**
@@ -21,7 +21,7 @@ class UmkmController extends Controller
      */
     public function create()
     {
-        return view('umkm.create');
+        return view('admin.umkm.create');
     }
 
     /**
@@ -63,7 +63,7 @@ class UmkmController extends Controller
      */
     public function show(umkm $umkm)
     {
-        return view('umkm.show', compact('umkm'));
+        return view('admin.umkm.show', compact('umkm'));
     }
 
     /**
@@ -71,7 +71,7 @@ class UmkmController extends Controller
      */
     public function edit(umkm $umkm)
     {
-        return view('umkm.edit', compact('umkm'));
+        return view('admin.umkm.edit', compact('umkm'));
     }
 
     /**
