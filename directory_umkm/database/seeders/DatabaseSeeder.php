@@ -21,6 +21,7 @@ class DatabaseSeeder extends Seeder
             PembinaSeeder::class,
             KategoriUmkmSeeder::class,
             UmkmSeeder::class,
+            UserSeeder::class,
         ]);
     }
 }

@@ -15,9 +15,17 @@
             <div class="image">
                 <img src="{{asset('assets/img/avatar4.png')}}" class="img-circle elevation-2" alt="User Image">
             </div>
+            @auth
             <div class="info">
-                <a href="index.php" class="d-block">Admin</a>
+                <a href="{{route('dashboard')}}" class="d-block">{{Auth::user()-> name}}</a>
+                <span class="d-block text-secondary">  {{ strtoupper(Auth::user()->role) }} </span>
             </div>
+            @endauth
+            @guest
+            <div class="info">
+                <a href="index.php" class="d-block">Guest</a>
+            </div>
+            @endguest
         </div>
 
         <!-- SidebarSearch Form -->
