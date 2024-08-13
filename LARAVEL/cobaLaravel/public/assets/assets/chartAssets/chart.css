@@ -1,0 +1,252 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #f0f0f0;
+    padding: 20px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 75vw;
+}
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #6c757d;
+    padding: 10px 15px;
+    position: static;
+    width: 100vw;
+    
+    z-index: 1000;
+}
+
+.navbar-brand {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+.navbar-toggler {
+    display: none;
+    font-size: 1.5rem;
+    color: #fff;
+    background: none;
+    border: none;
+}
+
+.navbar-collapse {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-nav {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+.nav-link {
+    color: #fff;
+    text-decoration: none;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    text-decoration: underline;
+}
+
+.nav-item.dropdown {
+    position: relative;
+}
+
+.dropdown-toggle::after {
+    content: ' ▼';
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    list-style: none;
+    padding: 10px 0;
+    min-width: 200px;
+    z-index: 1000;
+}
+
+.dropdown-item {
+    padding: 10px 15px;
+    color: #333;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-item:hover {
+    background-color: #f0f0f0;
+}
+
+.dropdown-divider {
+    border-top: 1px solid #e9ecef;
+    margin: 5px 0;
+}
+
+.cart-form {
+    display: flex;
+    align-items: center;
+}
+
+.cart-button {
+    display: flex;
+    align-items: center;
+    padding: 5px 10px;
+    border: 2px solid #fff;
+    background-color: transparent;
+    color: #fff;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.cart-button:hover {
+    background-color: #fff;
+    color: #6c757d;
+}
+
+.badge {
+    background-color: #343a40;
+    color: #fff;
+    padding: 2px 6px;
+    border-radius: 50%;
+    margin-left: 5px;
+}
+
+.header {
+    padding: 50px 0;
+    background-color: #e9ecef;
+    border-bottom: 1px solid #ddd;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.my-5 {
+    margin: 40px 0;
+}
+
+main {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    background-color: #fff;
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    align-items: center;
+}
+
+.bungkus img {
+    width: 13rem;
+    height: 13rem;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.penjelas {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.penjelas h2 {
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.penjelas p {
+    padding: 10px 15px;
+    background-color: #f7f7f7;
+    border-radius: 10px;
+    font-size: 1rem;
+    color: #555;
+    border: 1px solid #ddd;
+}
+
+.penjelas h4 {
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.penjelas input[type="text"] {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    width: 100%;
+}
+
+.buttons {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.buttons button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-transform: uppercase;
+}
+
+.buttons .buy {
+    background-color: white;
+    color: black;
+    border: 1px solid;
+}
+
+.buttons .buy:hover {
+    background-color: black;
+    color: white;
+}
+
+.buttons .delete {
+    background-color: #dc3545;
+    color: #fff;
+}
+
+.buttons .delete:hover {
+    background-color: white;
+    color: #dc3545;
+    border: 1px solid #dc3545;
+}
+
+@media (max-width: 768px) {
+    main {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .bungkus img {
+        width: 100%;
+        height: auto;
+    }
+}

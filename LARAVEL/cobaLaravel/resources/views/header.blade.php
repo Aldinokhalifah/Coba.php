@@ -12,6 +12,7 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="{{asset('assets/css/styles.css')}}" rel="stylesheet" />
+        
     </head>
     <body>
         <!-- Navigation-->
@@ -21,7 +22,7 @@
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
-                        <li class="nav-item"><a class="nav-link active text-light" aria-current="page" href="#!">Home</a></li>
+                        <li class="nav-item"><a class="nav-link active text-light" aria-current="page" href="{{ route('home') }}">Home</a></li>
                         <li class="nav-item"><a class="nav-link text-light" href="#!">About </a></li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle text-light" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Shop</a>
@@ -33,12 +34,10 @@
                             </ul>
                         </li>
                     </ul>
-                    <form class="d-flex ">
-                        <button class="btn btn-outline-light" type="submit">
-                            <i class="bi-cart-fill me-1 "></i>
-                            Cart
-                            <span class="badge bg-dark text-dark ms-1 rounded-pill text-white">0</span>
-                        </button>
+                    <form class="d-flex">
+                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                            <div class="text-center "><a class="btn btn-outline-light mt-3 bi-cart-fill me-1" href="{{ route('chart') }}"><span class="badge bg-dark text-dark ms-1 rounded-pill text-white">0</span></a></div>
+                        </div>
                     </form>
                 </div>
             </div>
