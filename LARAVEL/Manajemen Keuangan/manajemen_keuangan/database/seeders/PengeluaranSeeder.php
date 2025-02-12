@@ -28,5 +28,13 @@ class PengeluaranSeeder extends Seeder
             'kategori' => 'Transportasi',
             'keterangan' => 'Bensin dan transport umum'
         ]);
+
+        Pengeluaran::create([
+            'user_id' => 1,
+            'tanggal' => now(),
+            'jumlah' => 1500000,
+            'kategori' => 'Kebutuhan Pokok',
+            'keterangan' => 'Beras, minyak, gula, dan telur'
+        ]);
     }
 }

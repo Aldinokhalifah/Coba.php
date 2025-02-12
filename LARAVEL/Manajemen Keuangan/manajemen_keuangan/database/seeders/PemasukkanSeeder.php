@@ -28,5 +28,13 @@ class PemasukkanSeeder extends Seeder
             'kategori' => 'Freelance',
             'keterangan' => 'Proyek desain website'
         ]);
+
+        Pemasukkan::create([
+            'user_id' => 1,
+            'tanggal' => now(),
+            'jumlah' => 2500000,
+            'kategori' => 'Transportasi',
+            'keterangan' => 'Transportasi online'
+        ]);
     }
 }
